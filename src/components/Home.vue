@@ -11,12 +11,18 @@
             View my work <i className='fas fa-arrow-right'></i>
           </div>
         </div>
+        <Navbar />
       </section>
 </template>
 
 <script>
-export default {
+import Navbar from '@/components/Navbar.vue'
 
+export default {
+  name: 'Home',
+  components: {
+    Navbar
+  }
 }
 </script>
 
