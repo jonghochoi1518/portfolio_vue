@@ -1,30 +1,73 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
   <router-view/>
 </template>
 
-<style>
+<style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #2c3e50; */
+}
+:root {
+  /* Color */
+  --white-color: #ebebeb;
+  --black-color: black;
+  --blue-color: blue;
+  --red-color: red;
+  --gray-dark-color: #909090;
+  --blue-light-color: #04c2c9;
+  --blue-dark-color: #0a2336;
+  --pink-light-color: #e31b6d;
+
+  /* Size */
+  --side-padding: 12px;
+  --bet-padding: 50px;
+  --avatar-size: 36px;
+
+  /* Font Size */
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+/* Initialization */
+body {
+  margin: 0;
+  font-family: "Raleway";
 }
 
-nav {
-  padding: 30px;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  /* opacity: 0.5; */
 }
+
+.flex_column_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.padding_between {
+  padding-top: 50px;
+}
+
 </style>
