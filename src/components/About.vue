@@ -92,8 +92,8 @@ export default {
         // li click 이벤트 바인딩
         listElements.forEach((li, index) => {
             li.addEventListener("click", () => {
-                setActive(li, listElements);
-                bindingContent(listElements, li);
+                this.setActive(li, listElements);
+                this.bindingContent(listElements, li);
                 //select box 의 선택된 값을 변경한다.
                 selectElement.value = index + "";
             });
@@ -105,8 +105,8 @@ export default {
             const index = target.selectedIndex;
             // 선택된 select box 의 값에 해당하는 li 요소를 변수에 할당한다.
             const li = listElements[index];
-            setActive(li, listElements);
-            bindingContent(listElements, li);
+            this.setActive(li, listElements);
+            this.bindingContent(listElements, li);
         });
     },
     data: function() {
